@@ -1,0 +1,27 @@
+{{#block}}
+<h1>{{title}}</h1>
+<h3>VOTES: {{votes}}</h3>
+<form method = "post" action = "/categories/{{title}}/vote">
+	<input type = "hidden" name = "_method" value = "PUT">
+	<button>VOTE UP</button>
+</form>
+
+<form method = "post" action = "/categories/{{title}}/vote_down">
+	<input type = "hidden" name = "_method" value = "PUT">
+	<button>VOTE DOWN</button>
+</form>
+
+<form method = "post" action = "/categories/{{title}}">
+	<input type = "hidden" name = "_method" value = "DELETE">
+	<button>DELETE CATEGORY</button>
+</form>
+<h3><a href = "/categories/{{title}}/new_post">New Post</a>
+{{/block}}
+{{#block_1}}
+<h3>Name:{{user_name}}</h3>
+<h3>Title: <a href = "/categories/{{category}}/{{id}}">{{post_title}}</a></h3>
+<h3>Entry:{{entry}}
+<h3>Date:{{date}}</h3>
+{{/block_1}}
+<a href = "/categories">BACK</a>
+
