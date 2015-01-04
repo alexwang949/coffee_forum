@@ -1,15 +1,21 @@
 <h1> SINGLE POST </h1>
+<head>
+	<link rel = "stylesheet" type = "text/css" href = "./css/reset.css">
+	<link rel = "stylesheet" type = "text/css" href = "./css/style.css">
+	<title>Post</title>
+</head>
 {{#block}}
 {{votes}}
 
-<form method = "post" action = "/categories/{{category}}/{{id}}/vote">
+	<form method = "post" action = "/categories/{{category}}/{{id}}/vote">
 	<input type = "hidden" name = "_method" value = "put">
 	<button>VOTE UP!</button>
-</form>
-<form method = "post" action = "/categories/{{category}}/{{id}}/vote_down">
+	</form>
+
+	<form method = "post" action = "/categories/{{category}}/{{id}}/vote_down">
 	<input type = "hidden" name = "_method" value = "put">
 	<button>VOTE DOWN</button>
-</form>
+	</form>
 
 <h3>{{date}}</h3>
 <h3>Title:{{post_title}}</h3>

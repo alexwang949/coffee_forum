@@ -1,6 +1,14 @@
+<!DOCTYPE html>
+<head>
+	<link rel = "stylesheet" type = "text/css" href = "./css/reset.css">
+	<link rel = "stylesheet" type = "text/css" href = "./css/style.css">
+	<title>category</title>
+</head>
 {{#block}}
 <h1>{{title}}</h1>
 <h3>VOTES: {{votes}}</h3>
+<h1>howiehfo</h1>
+
 <form method = "post" action = "/categories/{{title}}/vote">
 	<input type = "hidden" name = "_method" value = "PUT">
 	<button>VOTE UP</button>
@@ -15,8 +23,10 @@
 	<input type = "hidden" name = "_method" value = "DELETE">
 	<button>DELETE CATEGORY</button>
 </form>
+
 <h3><a href = "/categories/{{title}}/new_post">New Post</a>
 {{/block}}
+
 {{#block_1}}
 <h3>Name:{{user_name}}</h3>
 <h3>Title: <a href = "/categories/{{category}}/{{id}}">{{post_title}}</a></h3>

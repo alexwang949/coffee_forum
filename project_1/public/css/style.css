@@ -2,17 +2,28 @@ html {
 	width: 80%;
 	margin: 0 auto;
 }
+
 h1 {
+	font-size: 20px;
+	color: red;
+}
+#title_1 {
 	color: white;
 	font-size: 5em;
 	color: #F8F8FF;
 	font-style: italic;
+	position: absolute; 
+	top: 160px; 
+	left: 430px;
 }
 
-h2 {
+#title_2 {
 	font-size: 6em;
-	color: #00BFFF;
-	font-style: italic;
+	color: #3659d6;
+	font-style: bold;
+	position: absolute; 
+	top: 250px; 
+	right: 418px;
 }
 
 /*body {
@@ -26,10 +37,11 @@ h2 {
 	display: block;
 	background-image: url("../images/coffee_rainy.png");
 	background-size: 85%;
-	background-position: 100%;
+	background-position: 140%;
 	background-repeat: no-repeat;
 	text-indent: -9999px;
 	height: 700px;
 	width: 850px;
+
 }
 
