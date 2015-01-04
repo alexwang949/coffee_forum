@@ -1,0 +1,35 @@
+html {
+	width: 80%;
+	margin: 0 auto;
+}
+h1 {
+	color: white;
+	font-size: 5em;
+	color: #F8F8FF;
+	font-style: italic;
+}
+
+h2 {
+	font-size: 6em;
+	color: #00BFFF;
+	font-style: italic;
+}
+
+/*body {
+	background-image: url(" ../images/coffee_rainy.png");
+	background-size: 80%;
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+}/*/
+
+#image_link {
+	display: block;
+	background-image: url("../images/coffee_rainy.png");
+	background-size: 85%;
+	background-position: 100%;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	height: 700px;
+	width: 850px;
+}
+

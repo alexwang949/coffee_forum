@@ -65,7 +65,7 @@ post '/categories/:categ_name/new_post' do
 	new_post.save
 	redirect '/categories'
 end 
-
+# binding.pry
 
 
 # view single category
