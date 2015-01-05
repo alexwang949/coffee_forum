@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <head>
+	<link href='http://fonts.googleapis.com/css?family=Lobster|Oswald' rel='stylesheet' type='text/css'>
 	<link rel = "stylesheet" type = "text/css" href = "./css/reset.css">
 	<link rel = "stylesheet" type = "text/css" href = "./css/style.css">
 	<title>Welcome to Coffee Forum NYC!</title>
 </head>
+<div id = "main_contents">
+	<div id = "top_header">
+	<h1 class = "welcome"> coffee forum NYC</h1>
+	</div>
 
-<h1> WELCOME! </h1>
-{{#block}}
-<h1><a href='/categories/{{title}}'>{{title}}</a></h1>
-<h3>{{description}}</h3>
-{{/block}}
-<h4><a href = "/categories/new">Add Category</a></h4>
+	<body>
+	{{#block}}
+	<h1><a href='/categories/{{title}}'>{{title}}</a></h1>
+	<h3>{{description}}</h3>
+	{{/block}}
+	<h4><a href = "/categories/new">Add Category</a></h4>
 
-<h2>ALL POSTS</h2>	
-{{#block_1}}
-<h3>{{date}}</h3>
-<h3><a href='/categories/{{category}}/{{id}}'>{{post_title}}</a></h3>
-{{/block_1}}
+	<h2>ALL POSTS</h2>	
+	{{#block_1}}
+	<h3>{{date}}</h3>
+	<h3><a href='/categories/{{category}}/{{id}}'>{{post_title}}</a></h3>
+	{{/block_1}}
+	</body>
+</div>
+</html>
