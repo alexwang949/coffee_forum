@@ -63,7 +63,8 @@ post '/categories/:categ_name/new_post' do
 	variable = params[:categ_name]
 	new_post = Post.create(category: params[:categ_name], post_title: params[:title], entry: params[:entry], date: date)
 	new_post.save
-	redirect '/categories'
+	new_cat = params["categ_name"].gsub(" ", "%20")
+	redirect to("/categories/#{new_cat}")
 end 
 # binding.pry
 
