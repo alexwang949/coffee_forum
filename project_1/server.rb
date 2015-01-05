@@ -8,10 +8,9 @@ require './lib/test_1.rb'
 require 'date'
 require 'mustache'
 require 'sinatra/reloader'
-require 'will_paginate'
-require 'will_paginate/active_record'
 
 
+ 
 # title page
 
 get '/' do 
