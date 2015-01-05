@@ -11,17 +11,23 @@
 	</div>
 
 	<body>
+		
 	{{#block}}
-	<h1><a href='/categories/{{title}}'>{{title}}</a></h1>
-	<h3>{{description}}</h3>
+	<a href='/categories/{{title}}' class = "categ_button">{{title}}: <span id = "category_desc">{{description}}</span></a>
 	{{/block}}
-	<h4><a href = "/categories/new">Add Category</a></h4>
 
-	<h2>ALL POSTS</h2>	
+	<a href = '/categories/new' class = "add_categ_button">add category</a>
+
+
+	<h2 id = "all_posts_header">ALL POSTS</h2>	
 	{{#block_1}}
-	<h3>{{date}}</h3>
-	<h3><a href='/categories/{{category}}/{{id}}'>{{post_title}}</a></h3>
+	<!-- <h3>{{date}}</h3> -->
+	<div class = "post_list">
+		<span id = "vote_style">{{votes}}</span><a href='/categories/{{category}}/{{id}}' class = "posts_link">
+		<span id = "post_titles_home">{{post_title}}</span></a></p>
+	</div>
 	{{/block_1}}
 	</body>
+	<h4><a href = "/categories/new">Add Category</a></h4>
 </div>
 </html>
