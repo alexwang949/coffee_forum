@@ -10,19 +10,19 @@
 	<h1 class = "welcome"> coffee forum NYC</h1>
 	</div>
 
+{{#block}}
 <form method = "POST" action = "/categories/{{title}}/new_post">
 	<div id = "single_categ_title">
 <h1>New Post</h1>
-{{#block}}
 	<h3>Category: {{title}}</h3>
 </div>
-	<h3> Title: </h3>
+	<h3> Title:  </h3>
 	<input type = "text" name = "title">
 	<h3> Entry: </h3>
-	<input type = "text" name = "entry" id = "entry_form">
+	<input type = "text" name = "entry">
 	<input type = "submit" value = "SUBMIT">
 </form>
-<h3><a href = "/categories/{{title}}">BACK</a>
+<a href = "/categories/{{title}}">BACK</a>
 	{{/block}}
 </div>
 
