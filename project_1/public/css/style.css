@@ -27,18 +27,53 @@ h1 {
 	border-color: #b4b6bd;
 }
 
-#category_desc {
+/*#category_desc {
 	font-style: italic;
-}
+}*/
 
 #all_posts_header {
 	clear: left;
+}
+
+.form_button {
+	line-height: 2em;
+	border: none;
+	background-color: gray;
+	width: 159px;
+	height: 33px;
+	color: white;
+	font-family: 'Quicksand', sans-seriff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 1em;
+	float: left;
+	margin-right: 5px;
+	border-radius: 5px;
+}
+
+.form_button:hover {
+	line-height: 2em;
+	border: none;
+	background-color: black;
+	width: 159px;
+	height: 33px;
+	color: white;
+	font-family: 'Quicksand', sans-seriff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 1em;
+	margin-bottom: 5px;
+	float: left;
+	margin-right: 5px;
+	border-radius: 5px;
+
 
 }
 
+}
 #vote_style {
 	font-style: italic;
-	font-size: 2em;
+	font-size: 10em;
 }
 .post_list {
 	line-height: 3em;
@@ -85,8 +120,33 @@ h1 {
 	font-size: 2.5em;
 	padding-top: 10px;
 	padding-left: 5px;
+
 	/*padding-left: 10%;
 	padding-top: 2%;*/
+}
+
+.post_button {
+	background-color: gray;
+	border-style: solid;
+	border-color: black;
+	color: white;
+	width: 10em;
+	height: 2em;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	line-height: 2em;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	font-family: 'Quicksand', sans-seriff;
+	font-size: 16px;
+	clear: left;
+	border-radius: 5px;
+}
+
+.post_button:hover {
+
+	background-color: black;
 }
 
 
@@ -98,7 +158,7 @@ h1 {
 	color: white;
 	width: 17em;
 	height: 3em;
-	font-family: Arial;
+	font-family: 'Quicksand', sans-seriff;
 	display: block;
 	float: left;
 	text-align: center;
@@ -107,9 +167,28 @@ h1 {
 /*	padding: 5px 8px 5px 8px;*/
 	text-decoration: none;
 	margin-top: 5px;
+	border-radius: 5px;
 }
 
 .add_categ_button {
+	border-style: solid;
+	border-color: black;
+	color: white;
+	width: 17em;
+	height: 3em;
+	font-family: 'Quicksand', sans-seriff;
+	display: block;
+	float: left;
+	text-align: center;
+	padding: 5px;
+	margin-right: 5px;
+	text-decoration: none;
+	margin-top: 5px;
+	background-color: black;
+	border-radius: 5px;
+	line-height: 3em;
+}
+.add_categ_button:hover {
 	border-style: solid;
 	border-color: black;
 	color: white;
@@ -123,8 +202,11 @@ h1 {
 	margin-right: 5px;
 	text-decoration: none;
 	margin-top: 5px;
-	background-color: black;
+	background: #d63659;
+	border-radius: 5px;
+	line-height: 3em;
 }
+
 
 
 .categ_button:hover {

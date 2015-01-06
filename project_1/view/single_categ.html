@@ -18,27 +18,28 @@
 </div>
 <h3>VOTES: {{votes}}</h3>
 
+
 <form method = "post" action = "/categories/{{title}}/vote">
 	<input type = "hidden" name = "_method" value = "PUT">
-	<button>VOTE UP</button>
+	<button  class = "form_button">UPVOTE</button>
 </form>
 
 <form method = "post" action = "/categories/{{title}}/vote_down">
 	<input type = "hidden" name = "_method" value = "PUT">
-	<button>VOTE DOWN</button>
+	<button class = "form_button">DOWNVOTE</button>
 </form>
 
 <form method = "post" action = "/categories/{{title}}">
 	<input type = "hidden" name = "_method" value = "DELETE">
-	<button>DELETE CATEGORY</button>
+	<button class = "form_button">DELETE CATEGORY</button>
 </form>
 
-<h3><a href = "/categories/{{title}}/new_post">New Post</a>
+<a href = "/categories/{{title}}/new_post" class = "post_button">NEW POST</a>
 {{/block}}
 
 {{#block_1}}
 <div id = "single_cat_lineheight">
-<h3>Name:{{user_name}}</h3>
+<!-- <h3>Name:{{user_name}}</h3> -->
 <h3>Title: <a href = "/categories/{{category}}/{{id}}">{{post_title}}</a></h3>
 <h3>Entry:{{entry}}
 <h3>Date:{{date}}</h3>
