@@ -1,7 +1,21 @@
+<!DOCTYPE html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Lobster|Oswald' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+	<link rel = "stylesheet" type = "text/css" href = "/css/reset.css">
+	<link rel = "stylesheet" type = "text/css" href = "/css/style.css">
+</head>
+<div id = "main_contents">
+	<div id = "top_header">
+	<h1 class = "welcome"> coffee forum NYC</h1>
+	</div>
+
+<form method = "POST" action = "/categories/{{title}}/new_post">
+	<div id = "single_categ_title">
 <h1>New Post</h1>
 {{#block}}
-<form method = "POST" action = "/categories/{{title}}/new_post">
 	<h3>Category: {{title}}</h3>
+</div>
 	<h3> Title: </h3>
 	<input type = "text" name = "title">
 	<h3> Entry: </h3>
@@ -10,4 +24,5 @@
 </form>
 <h3><a href = "/categories/{{title}}">BACK</a>
 	{{/block}}
+</div>
 

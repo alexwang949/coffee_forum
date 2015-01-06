@@ -1,6 +1,23 @@
+
+<!DOCTYPE html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Lobster|Oswald' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+	<link rel = "stylesheet" type = "text/css" href = "/css/reset.css">
+	<link rel = "stylesheet" type = "text/css" href = "/css/style.css">
+</head>
+<div id = "main_contents">
+	<div id = "top_header">
+	<h1 class = "welcome"> coffee forum NYC</h1>
+	</div>
+
+
 {{#block}}
 <form method = "post" action = "/categories/{{category}}/{{id}}/comment">
+	<div id = "single_categ_title">
+
 	<h1> NEW COMMENT </h1>
+</div>
 	Username:
 	<input type = "text" name = "comment_user_name">
 	Comment:
@@ -9,3 +26,5 @@
 </form>
 <a href="/categories/{{category}}/{{id}}">Cancel</a>
 	{{/block}}
+</div>
+	</html>

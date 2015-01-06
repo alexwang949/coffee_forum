@@ -48,9 +48,10 @@ h1 {
 }
 
 #post_titles_home {
-	font-size: 1em;
-	text-decoration: none;
+/*	font-size: 1em;
+*/	text-decoration: none;
 	text-align: right;
+	font-family: 'Quicksand', sans-seriff;
 	/*line-height: 30px;*/
 }
 
@@ -60,11 +61,23 @@ h1 {
 	color: #3659d6;
 }
 
+#single_categ_title {
+	font-family: 'Lobster', cursive;
+	padding: 3px;
+}
 /*#wrapper_body {
 	width: 70%;
 	margin: 2% 5% auto;
 
 }*/
+
+#single_cat_lineheight {
+	line-height: 1.5em;
+	padding-bottom: 1em;
+	color: #3659d6;
+	font-family: "Quicksand", sans-seriff;
+	font-weight: bold;
+}
 
 .welcome {
 	font-family: 'Lobster', cursive;
@@ -83,7 +96,7 @@ h1 {
 	border-style: solid;
 	border-color: black;
 	color: white;
-	width: 13.462em;
+	width: 17em;
 	height: 3em;
 	font-family: Arial;
 	display: block;
@@ -100,7 +113,7 @@ h1 {
 	border-style: solid;
 	border-color: black;
 	color: white;
-	width: 13.462em;
+	width: 17em;
 	height: 3em;
 	font-family: Arial;
 	display: block;

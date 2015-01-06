@@ -1,11 +1,20 @@
 <head>
-	<link rel = "stylesheet" type = "text/css" href = "../css/reset.css">
-	<link rel = "stylesheet" type = "text/css" href = "../css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Lobster|Oswald' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+	<link rel = "stylesheet" type = "text/css" href = "/css/reset.css">
+	<link rel = "stylesheet" type = "text/css" href = "/css/style.css">
 	<title>Post</title>
 </head>
-<h1> SINGLE POST </h1>
+<div id = "main_contents">
+	<div id = "top_header">
+	<h1 class = "welcome"> coffee forum NYC</h1>
+	</div>
+
 {{#block}}
-{{votes}}
+<div id = "single_categ_title">
+<h1> {{post_title}} </h1>
+</div>
+VOTES: {{votes}}
 
 	<form method = "post" action = "/categories/{{category}}/{{id}}/vote">
 	<input type = "hidden" name = "_method" value = "put">
@@ -16,6 +25,8 @@
 	<input type = "hidden" name = "_method" value = "put">
 	<button>VOTE DOWN</button>
 	</form>
+
+<div id = "single_cat_lineheight">
 
 <h3>{{date}}</h3>
 <h3>Title:{{post_title}}</h3>
@@ -34,4 +45,6 @@
 <h4>{{user_name}}</h4>
 {{entry}}
 {{/block_1}}
+</div>
+</div>
 

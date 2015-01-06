@@ -1,3 +1,4 @@
+
 require 'sinatra'
 require 'pry'
 require './lib/categories_class.rb'
@@ -10,6 +11,9 @@ require 'mustache'
 require 'sinatra/reloader'
 
 
+after do
+ActiveRecord::Base.connection.close
+end
  
 # title page
 
@@ -19,13 +23,11 @@ end
 
 # view all categories
 
-get '/categories' do 	
+get '/categories' do 
 	categories = Category.all.to_a
 	posts = Post.all.to_a
 	Mustache.render(File.read('./view/all_categ.html'), {block: categories, block_1: posts})
 end
-
-
 
 # add category form
 
@@ -105,7 +107,9 @@ post '/categories/:categ_name/:id_post/comment' do
 	date = Date.today
 	new_comment = Comment.create(user_name: params[:comment_user_name], date: date, entry: params[:comment_entry], post_id: params[:id_post])
 	new_comment.save
-	redirect('/categories')
+	new_one = params[:categ_name]
+	# redirect to('/categories/#{new_one}/params[:id_post]')
+	redirect to('/categories')
 end
 
 #### VOTE FOR CATEGORY #####
