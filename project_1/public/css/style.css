@@ -23,18 +23,29 @@ h1 {
 	height: 60px;
 	background-color: #dfe1e5;
 	border-bottom: solid;
-	border-width: .2em;
+	border-width: .3em;
 	border-color: #b4b6bd;
 }
 
 /*#category_desc {
 	font-style: italic;
 }*/
+#entry_form {
+	width: 30em;
+	height: 15em;
+}
+#entry_form_1 {
+	width: 15em;
+	height: 6em;
+	margin-top: 5px;
+}
 
 #all_posts_header {
 	clear: left;
 }
-
+ #add_fix {
+ 	margin-top: 8px;
+ }
 .form_button {
 	line-height: 2em;
 	border: none;
@@ -54,7 +65,7 @@ h1 {
 .form_button:hover {
 	line-height: 2em;
 	border: none;
-	background-color: black;
+	background-color: #585a60;
 	width: 159px;
 	height: 33px;
 	color: white;
@@ -69,11 +80,14 @@ h1 {
 
 
 }
+ .clear_fix {
+ 	clear: left;
+ }
 
-}
 #vote_style {
-	font-style: italic;
-	font-size: 10em;
+	font-style: italic;lic;
+	font-size: 2em;
+	padding-right: 1em;
 }
 .post_list {
 	line-height: 3em;

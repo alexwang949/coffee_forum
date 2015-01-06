@@ -18,20 +18,22 @@ VOTES: {{votes}}
 
 	<form method = "post" action = "/categories/{{category}}/{{id}}/vote">
 	<input type = "hidden" name = "_method" value = "put">
-	<button>VOTE UP!</button>
+	<button class = "form_button">UPVOTE</button>
 	</form>
 
 	<form method = "post" action = "/categories/{{category}}/{{id}}/vote_down">
 	<input type = "hidden" name = "_method" value = "put">
-	<button>VOTE DOWN</button>
+	<button class = "form_button">DOWNVOTE</button>
 	</form>
 
 <div id = "single_cat_lineheight">
 
+<div class = "clear_fix">
 <h3>{{date}}</h3>
 <h3>Title:{{post_title}}</h3>
 <h3>Entry:{{entry}}</h3>
 <h3><a href = "/categories/{{category}}">BACK</a>	<h3>	
+</div>
 
 <form method = "post" action = "/categories/{{category}}/{{id}}">
 <input type = "hidden" name = "_method" value = "DELETE">
